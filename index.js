@@ -20,6 +20,7 @@ Do the following:
 
 
 
+
 /*
 Task 1b - Values
 
@@ -58,9 +59,9 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
+function multiply(a, b){
+  return a * b;
+}
 
 
 
@@ -74,8 +75,8 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-    /*add your code here*/
+function dogYears(age){
+  return age * 7;
 }
 
 
@@ -149,9 +150,9 @@ Using the miles function below do the following:
   3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-    /*add your code here*/
-  }
+function miles(km){
+  return km * 0.621317;
+}
 
 
 
@@ -163,9 +164,9 @@ Using the feet function below do the following:
   3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-    /*add your code here*/
-  }
+function feet(cm){
+  return cm / 30.48;
+}
  
 
 
