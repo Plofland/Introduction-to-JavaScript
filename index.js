@@ -159,27 +159,38 @@ Use the game function below to do the following:
   HINT: While you can complete this with only conditionals based on strings, it may help to equate choice to a number when using Math.random()
 */
 
-let computer = Math.random();
+// let computer = Math.random();
+// let user = Math.random();
 
 function game(user, computer){
-  if (computer <= 0.33){
-    computer = "paper";
-  }
-  else if (computer < 0.66){
-    computer = "rock";
-  }
-  else if (computer <= 1){
-    computer = "scissors";
-  }
+  // if (computer <= 0.33){
+  //   computer = "paper";
+  // }
+  // else if (computer < 0.66){
+  //   computer = "rock";
+  // }
+  // else if (computer <= 1){
+  //   computer = "scissors";
+  // }
+
+  // if (user <= 0.33){
+  //   user = "paper";
+  // }
+  // else if (user < 0.66){
+  //   user = "rock";
+  // }
+  // else if (user <= 1){
+  //   user = "scissors";
+  // }
 
   if (user === computer){
-    console.log("it's a tie")
+    console.log("it's a tie");
   }
   else if (user === "rock" && computer === "paper" || user === "paper" && computer === "scissors" || user === "scissors" && computer === "rock") {
-    console.log("you lose!")
+    console.log("you lose!");
   }
   else {
-    console.log("you win!")
+    console.log("you win!");
   }
 }
 console.log(game(user, computer));
