@@ -161,7 +161,6 @@ Use the game function below to do the following:
 
 let computer = Math.random();
 
-
 function game(user, computer){
   if (computer <= 0.33){
     computer = "paper";
@@ -169,21 +168,21 @@ function game(user, computer){
   else if (computer < 0.66){
     computer = "rock";
   }
-  else {
+  else if (computer <= 1){
     computer = "scissors";
   }
-  
-  if (user == computer){
+
+  if (user === computer){
     console.log("it's a tie")
   }
-  else if ((user == "rock" && computer == "paper") || (user == "paper" && computer == "scissors") || (user == "scissors" && computer == "rock")) {
+  else if (user === "rock" && computer === "paper" || user === "paper" && computer === "scissors" || user === "scissors" && computer === "rock") {
     console.log("you lose!")
   }
   else {
     console.log("you win!")
   }
 }
-
+console.log(game(user, computer));
 
   
   
